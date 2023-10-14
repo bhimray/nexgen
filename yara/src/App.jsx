@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Footer from './Components/Footer'
 import LandingPage from './Components/LandingPage'
+import OurProduct from './Components/OurProduct'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <LandingPage />
+      <OurProduct />
+      <Footer />
     </>
   )
 }
