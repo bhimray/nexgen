@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/style.css'
-// import landingVideo from "../../public/img/bottle.mp4"
+import landingVideo from "../../public/img/bottle.mp4"
 
 const LandingPage = () => {
     return (
@@ -16,7 +16,7 @@ const LandingPage = () => {
                             </button>
                             <div className="logo-mobile">
                                 <a className="navbar-brand" href="">
-                                    <img src="../../public/img/logo.png" alt="" title="Logo_black_Header_2021" />
+                                    <img src="../../public/img/gold_logo.png" alt="" title="Logo_black_Header_2021" />
                                 </a>
                             </div>
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,7 +29,7 @@ const LandingPage = () => {
                                 </div>
                                 <div className="logo-desktop">
                                     <a className="navbar-brand" href="">
-                                        <img src="../../public/img/logo.png" alt="" title="Logo_black_Header_2021" />
+                                        <img src="../../public/img/gold_logo.png" alt="" title="Logo_black_Header_2021" />
                                     </a>
                                 </div>
                                 <div className="menu-main-menu-right-container">
@@ -54,7 +54,7 @@ const LandingPage = () => {
                 </a>
             </div>
             <div style={{ height: "100vh", width: "100vw" }}>
-                <img src="../../public/img/original_vape.jpg" alt="" style={{ fill: "black" }} title="main_wallpaper" />
+                <img src="../../public/img/original_vape.jpg" alt="" style={{ fill: "black", width: "100%", objectFit: "cover" }} title="main_wallpaper" />
             </div>
             {/* <section className="block-hero-video ">
                 <video src={landingVideo} autoPlay loop muted className="html-video z-index-1">
