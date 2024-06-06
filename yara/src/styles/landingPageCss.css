@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: Add a semi-transparent background to the header */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 80px; /* Adjust the height as needed */
+}
+
+.backgroundImg {
+  background-image: url("../assets/original_vape.jpg"); /* Make sure to have your background image in the src directory */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.backgroundImg2 {
+  background-image: url("../assets/juicybar.jpg"); /* Make sure to have your background image in the src directory */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.offerText {
+  font-size: 2rem;
+}
+.menuLeft,
+.menuRight {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .offerText {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .offerText {
+    font-size: 2rem;
+  }
+  .logo-container .menuLeft,
+  .logo-container .menuRight {
+    display: none;
+  }
+}

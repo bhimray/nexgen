@@ -1,0 +1,31 @@
+/* src/AnimatedText.css */
+.animated-text-container {
+  display: inline-block;
+  position: relative;
+}
+
+.animated-text {
+  display: inline-block;
+  position: relative;
+  font-size: 15px; /* Adjust font size as needed */
+  font-weight: bold; /* Optional: Make the text bold */
+  color: #d9bfbf; /* Adjust text color as needed */
+  padding-bottom: 2px;
+}
+
+.animated-text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Adjust the thickness of the underline */
+  bottom: 0;
+  left: 0;
+  background-color: #bc9d9d; /* Adjust underline color as needed */
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.animated-text:hover::after {
+  visibility: visible;
+  width: 100%;
+}
